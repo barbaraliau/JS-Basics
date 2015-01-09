@@ -45,8 +45,17 @@ var name = 'Tyler';
 //returned from adder.
 
   var adder = function() {
-
+   var total = 0;
+   for (var i in arguments) {
+      total += arguments[i];
+      };
+   return total;
   };
+
+  var adderResult = adder(1,2,3,4,5);
+
+  alert(adderResult);
+  
 
 
 //Next Problem
@@ -55,7 +64,7 @@ var name = 'Tyler';
 
 //What is the difference between arguments and parameters?
 
-  Arguments are things you pass when you call a function; 
+  Arguments are the values you pass into parameters when you call a function; 
   parameters are placeholders for where your argument value is going to go
 
 
