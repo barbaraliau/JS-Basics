@@ -44,6 +44,8 @@ var name = 'Tyler';
 //Save the result of the return value from your adder function, then alert "The Total Number was " + the number that was
 //returned from adder.
 
+
+//using for in loop
   var adder = function() {
    var total = 0;
    for (var i in arguments) {
@@ -54,6 +56,20 @@ var name = 'Tyler';
 
   var adderResult = adder(1,2,3,4,5);
 
+  alert(adderResult);
+
+//alternate with for-loop
+
+  var adder = function() {
+    var total = 0;
+    for (var i = 0; i < arguments.length; i++) {
+      total += arguments[i];
+    };
+    return total;
+  };
+
+  var adderResult = adder(1,2,3,4,5);
+  
   alert(adderResult);
   
 
